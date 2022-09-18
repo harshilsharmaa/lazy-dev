@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A library to set up your basic app requirement and make all files and folder required for nodejs development.",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build"
