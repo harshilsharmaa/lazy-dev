@@ -1,0 +1,31 @@
+{
+  "name": "lazy-dev",
+  "version": "1.0.0",
+  "description": "A library to set up your basic app requirement and make all files and folder required for nodejs development.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshilsharmaa/lazy-dev.git"
+  },
+  "keywords": [
+    "lazy-dev",
+    "folder-structure",
+    "basic-app",
+    "MERN folder structure",
+    "nodejs folder structure"
+  ],
+  "author": "Harshil Sharma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/harshilsharmaa/lazy-dev/issues"
+  },
+  "homepage": "https://github.com/harshilsharmaa/lazy-dev#readme",
+  "devDependencies": {
+    "typescript": "^4.8.3"
+  },
+  "files": ["lib/**/*"]
+}
