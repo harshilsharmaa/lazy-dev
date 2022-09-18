@@ -378,26 +378,6 @@ exports.myProfile = async(req,res)=>{
     }
 }
 
-
-exports.getAllUsers = async(req,res)=>{
-    try {
-        
-        const users = await User.find({name: {$regex: req.query.name, $options:"i"}});
-
-        res.status(200).json({
-            message: "All users",
-            users,
-        })
-
-    } catch (error) {
-        res.status(500).json({
-            message: error.message,
-            success: false
-        })
-    } 
-}
-
-
 exports.forgotPassword = async(req,res)=>{
     try{
         const user = await User.findOne({email:req.body.email});
