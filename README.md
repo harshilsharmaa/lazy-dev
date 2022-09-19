@@ -1,4 +1,4 @@
-# Lazy-dev
+# Lazy-geek
 
 ### A library to set up your basic app requirement and make all files and folder required for nodejs development.
 
@@ -8,7 +8,17 @@ As many developers need to set up basic folders/files and some common functions,
 
 </br>
 
-Folder structure created by lazy-dev:
+Run folowing command to set up the project.
+```bash
+node node_modules/lazy-geek/lib/index.js
+```
+
+After installation, run the app using following command.
+```bash
+node app.js
+```
+
+Folder structure created by lazy-geek:
 ```bash
  
     ├── app.js
@@ -47,5 +57,5 @@ Set up your environment variables in config/config.env
 
 Installation
 ```bash
-npm install lazy-dev
+npm install lazy-geek
 ```
