@@ -6,9 +6,11 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "postinstall": "node node_modules/lazy-geek/lib/index.js",
     "prepare": "npm run build",
     "start": "lib/index.js"
+  },
+  "bin": {
+    "create-app": "src/index.ts"
   },
   "repository": {
     "type": "git",
