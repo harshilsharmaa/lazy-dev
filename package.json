@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
-    "postinstall": "node node_modules/lazy-geek/lib/index.js",
+    "postinstall": "node lib/index.js",
     "start": "lib/index.js"
   },
   "bin": {

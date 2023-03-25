@@ -1,4 +1,4 @@
 #!/usr/bin/env node
 
-const {app_structure} = require('./controller.js');
+import {app_structure} from './controller.js';
 app_structure();
