@@ -21,17 +21,17 @@ const app_structure = ()=>{
     fs.mkdirSync('utils');
     fs.mkdirSync('config');
 
-    fs.writeFileSync('../../app.js', app_file_data);
-    fs.writeFileSync('../../models/User.js', User_model_file_data);
-    fs.writeFileSync('../../controllers/user.controller.js', user_controller_file_data);
-    fs.writeFileSync('../../routes/user.route.js', user_routefile_data);
-    fs.writeFileSync('../../middleware/auth.js', userAuth_data);
-    fs.writeFileSync('../../middleware/sendEmail.js', sendEmail_file_data);
-    fs.writeFileSync('../../config/database.js', database_file_data);
-    fs.writeFileSync('../../config/config.env', dotenv_file_data);
+    fs.writeFileSync('app.js', app_file_data);
+    fs.writeFileSync('models/User.js', User_model_file_data);
+    fs.writeFileSync('controllers/user.controller.js', user_controller_file_data);
+    fs.writeFileSync('routes/user.route.js', user_routefile_data);
+    fs.writeFileSync('middleware/auth.js', userAuth_data);
+    fs.writeFileSync('middleware/sendEmail.js', sendEmail_file_data);
+    fs.writeFileSync('config/database.js', database_file_data);
+    fs.writeFileSync('config/config.env', dotenv_file_data);
 
     // Installing dependencies
-    const command1 = spawn('npm --prefix ../../ init -y', {shell: true});
+    const command1 = spawn('npm init -y', {shell: true});
     const command2 = spawn('npm install --prefix ../ express bcrypt dotenv mongoose nodemailer jsonwebtoken cookie-parser cors', {shell: true});
 
     // Console loading animation
